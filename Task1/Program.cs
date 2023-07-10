@@ -8,7 +8,7 @@ int ReadInt(string message)				// Запрашивает число у поль�
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void power(int arg1, int arg2)
+void evenNumbers(int arg1, int arg2)
 {
     if (arg1 > arg2)
     {
@@ -18,9 +18,9 @@ void power(int arg1, int arg2)
     {
         System.Console.WriteLine(arg1);
     }
-    power(arg1 + 1, arg2);
+    evenNumbers(arg1 + 1, arg2);
 }
 
 int number1 = ReadInt("Введите число 1 ---> ");
 int number2 = ReadInt("Введите число 2 ---> ");
-power(number1, number2);
+evenNumbers(number1, number2);
